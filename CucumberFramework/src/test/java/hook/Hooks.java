@@ -69,12 +69,6 @@ public class Hooks {
 		}
 
 	}
-
-	@AfterAll
-	public static void after_all() {
-		Reporter.log("After all executed");
-	}
-
 	@After
 	public void afterAll() {
 		getScenario().log(getScenario().getName() + " : Scenario execution ended");
