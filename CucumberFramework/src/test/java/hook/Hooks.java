@@ -68,6 +68,8 @@ public class Hooks {
 			scenario.attach(screenshot, "image/png", scenario.getName());
 		}
 
+		
+		
 	}
 	@After
 	public void afterAll() {
