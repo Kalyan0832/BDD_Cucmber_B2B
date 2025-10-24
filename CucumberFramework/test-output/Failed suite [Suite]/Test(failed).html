@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 24 15:54:01 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>25 seconds (25567 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Login to the application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c58aed06afaab66f6ce94c5dfb04f53a, clickElement {id=f.40BCFF3E58759AEFB5D7BE36C017E96F.d.4A5A99E2654811712E1F764B3196A6E2.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63573/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c58aed06afaab66f6ce94c5dfb04f53a)] -&gt; id: Login]
+Session ID: c58aed06afaab66f6ce94c5dfb04f53a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1032183381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1032183381'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c58aed06afaab66f6ce94c5dfb04f53a, clickElement {id=f.40BCFF3E58759AEFB5D7BE36C017E96F.d.4A5A99E2654811712E1F764B3196A6E2.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63573/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c58aed06afaab66f6ce94c5dfb04f53a)] -&gt; id: Login]
+Session ID: c58aed06afaab66f6ce94c5dfb04f53a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.RunnerClass@72c8e7b</td></tr>
+<tr>
+<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Login to the application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aabe680700bdbed32be1a991d329c928, clickElement {id=f.38412F654874B0DDF7A96A8D84C55601.d.CC637BCFA9A33A7F65C8E7F59EBDDA08.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63574/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aabe680700bdbed32be1a991d329c928)] -&gt; id: Login]
+Session ID: aabe680700bdbed32be1a991d329c928
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1357239238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1357239238'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aabe680700bdbed32be1a991d329c928, clickElement {id=f.38412F654874B0DDF7A96A8D84C55601.d.CC637BCFA9A33A7F65C8E7F59EBDDA08.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63574/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aabe680700bdbed32be1a991d329c928)] -&gt; id: Login]
+Session ID: aabe680700bdbed32be1a991d329c928
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.RunnerClass@72c8e7b</td></tr>
+<tr>
+<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Login to the application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec4a3fe9240800e117be283dd953acbc, clickElement {id=f.E0A71A349920960DE0430888EB0CEC58.d.D6AA34BDED0291E462EDC8DF636E8E2E.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52013/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec4a3fe9240800e117be283dd953acbc)] -&gt; id: Login]
+Session ID: ec4a3fe9240800e117be283dd953acbc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681384302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681384302'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec4a3fe9240800e117be283dd953acbc, clickElement {id=f.E0A71A349920960DE0430888EB0CEC58.d.D6AA34BDED0291E462EDC8DF636E8E2E.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52013/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec4a3fe9240800e117be283dd953acbc)] -&gt; id: Login]
+Session ID: ec4a3fe9240800e117be283dd953acbc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/Search.feature:14)
+</pre></div></td>
+<td>10</td>
+<td>runner.RunnerClass@72c8e7b</td></tr>
+<tr>
+<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should able to login with", "Login to the application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f578a81997d7d0540fc5ad65fa896b16, clickElement {id=f.E4DE5148A6FD2893161FC491FAD9BF84.d.F26E3F1023F46FA66AFF2490CD7CD715.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f578a81997d7d0540fc5ad65fa896b16)] -&gt; id: Login]
+Session ID: f578a81997d7d0540fc5ad65fa896b16
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/login.feature:13)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658052298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658052298'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained&quot; tabindex=&quot;0&quot; type=&quot;submit&quot; id=&quot;Login&quot; name=&quot;Login&quot; style=&quot;width: 100%; margin: 0.7rem auto; background: rgb(255, 184, 0); font-weight: 600; color: rgb(239, 239, 239);&quot;&gt;...&lt;/button&gt; is not clickable at point (807, 323). Other element would receive the click: &lt;div&gt;&lt;/div&gt;
+  (Session info: chrome=141.0.7390.122)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f578a81997d7d0540fc5ad65fa896b16, clickElement {id=f.E4DE5148A6FD2893161FC491FAD9BF84.d.F26E3F1023F46FA66AFF2490CD7CD715.e.8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.122, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52014/devtoo..., se:cdpVersion: 141.0.7390.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f578a81997d7d0540fc5ad65fa896b16)] -&gt; id: Login]
+Session ID: f578a81997d7d0540fc5ad65fa896b16
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at CucumberPractice.LoginTest.click_on_enter(LoginTest.java:47)
+	at ✽.Click on enter(file:///C:/Users/DELL/git/repository2/CucumberFramework/./src/test/resources/Features/login.feature:13)
+</pre></div></td>
+<td>10</td>
+<td>runner.RunnerClass@72c8e7b</td></tr>
+</table><p>
+</body>
+</html>
