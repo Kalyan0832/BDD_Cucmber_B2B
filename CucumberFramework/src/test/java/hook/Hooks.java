@@ -27,11 +27,11 @@ public class Hooks {
 	public static WebDriver getDriver() {
 		return driverValue.get();
 	}
-	
+
 	public void setScenario(Scenario scenario) {
 		scenarioRunning.set(scenario);
 	}
-	
+
 	public static Scenario getScenario() {
 		return scenarioRunning.get();
 	}
@@ -48,12 +48,12 @@ public class Hooks {
 
 	@BeforeAll
 	public static void before_all() {
-		
+
 	}
 
 	@BeforeStep
 	public void beforeStep(Scenario scenario) {
-		
+
 		scenario.log("Before step started");
 	}
 
@@ -66,9 +66,8 @@ public class Hooks {
 			scenario.attach(screenshot, "image/png", scenario.getName());
 		}
 
-		
-		
 	}
+
 	@After
 	public void afterAll() {
 		getScenario().log(getScenario().getName() + " : Scenario execution ended");
