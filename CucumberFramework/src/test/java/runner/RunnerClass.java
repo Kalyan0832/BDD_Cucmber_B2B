@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = { "./src/test/resources/Features" }, 
 				 glue = { "CucumberPractice","hook" }, 
 				 plugin = { "pretty",
-				"html:reports/LogTest4Parallel.html" }, 
+				"html:reports/LogTest4Parallel.html" },
 				 monochrome = true, 
 				 dryRun = false
 				 )
